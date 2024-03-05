@@ -1,131 +1,161 @@
 {
     "R1": {
         "FastEthernet1/0": {
-            "ip": "198.51.102.1",
+            "ipv4": "198.51.102.1",
+            "ipv6": "",
             "status": "up"
         },
         "FastEthernet0/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "FastEthernet2/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "FastEthernet3/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "VoIP-Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         },
         "Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         }
     },
     "R2": {
         "FastEthernet0/0": {
-            "ip": "198.51.101.12",
+            "ipv4": "198.51.101.12",
+            "ipv6": "",
             "status": "up"
         },
         "FastEthernet1/0": {
-            "ip": "198.51.102.2",
+            "ipv4": "198.51.102.2",
+            "ipv6": "",
             "status": "up"
         },
         "FastEthernet2/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "FastEthernet3/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "VoIP-Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         },
         "Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         }
     },
     "R3": {
         "FastEthernet0/0": {
-            "ip": "198.51.101.11",
+            "ipv4": "198.51.101.11",
+            "ipv6": "",
             "status": "up"
         },
         "FastEthernet1/0": {
-            "ip": "198.51.102.3",
+            "ipv4": "198.51.102.3",
+            "ipv6": "",
             "status": "up"
         },
         "FastEthernet2/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "FastEthernet3/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "VoIP-Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         },
         "Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         }
     },
     "R4": {
         "FastEthernet1/0": {
-            "ip": "198.51.100.4",
+            "ipv4": "198.51.100.4",
+            "ipv6": "",
             "status": "up"
         },
         "FastEthernet0/0": {
-            "ip": "198.51.101.1",
+            "ipv4": "198.51.101.1",
+            "ipv6": "",
             "status": "up"
         },
         "FastEthernet2/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "FastEthernet3/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "VoIP-Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         },
         "Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         }
     },
     "R5": {
         "FastEthernet0/0": {
-            "ip": "198.51.101.5",
+            "ipv4": "198.51.101.5",
+            "ipv6": "",
             "status": "up"
         },
         "FastEthernet1/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "FastEthernet2/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "FastEthernet3/0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "down"
         },
         "VoIP-Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         },
         "Null0": {
-            "ip": "",
+            "ipv4": "",
+            "ipv6": "",
             "status": "up"
         }
     }
