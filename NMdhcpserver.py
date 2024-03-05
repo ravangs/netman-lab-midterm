@@ -48,7 +48,7 @@ def configure_ipv4_dhcp(router_details, r5_ip, config_commands):
         print("Configuring DHCP...")
 
         net_connect.send_config_set(config_commands.splitlines())
-        time.sleep(30)
+        time.sleep(60)
         print("Completed!")
 
         output = net_connect.send_command('show ip dhcp binding')
