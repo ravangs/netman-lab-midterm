@@ -1,70 +1,132 @@
 {
     "R1": {
-        "addresses": {
-            "FastEthernet1/0": "198.51.102.1"
+        "FastEthernet1/0": {
+            "ip": "198.51.102.1",
+            "status": "up"
         },
-        "status": {
-            "FastEthernet0/0": "down",
-            "FastEthernet1/0": "up",
-            "FastEthernet2/0": "down",
-            "FastEthernet3/0": "down",
-            "VoIP-Null0": "up",
-            "Null0": "up"
+        "FastEthernet0/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "FastEthernet2/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "FastEthernet3/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "VoIP-Null0": {
+            "ip": "",
+            "status": "up"
+        },
+        "Null0": {
+            "ip": "",
+            "status": "up"
         }
     },
     "R2": {
-        "addresses": {
-            "FastEthernet0/0": "198.51.101.12",
-            "FastEthernet1/0": "198.51.102.2"
+        "FastEthernet0/0": {
+            "ip": "198.51.101.12",
+            "status": "up"
         },
-        "status": {
-            "FastEthernet0/0": "up",
-            "FastEthernet1/0": "up",
-            "FastEthernet2/0": "down",
-            "FastEthernet3/0": "down",
-            "VoIP-Null0": "up",
-            "Null0": "up"
+        "FastEthernet1/0": {
+            "ip": "198.51.102.2",
+            "status": "up"
+        },
+        "FastEthernet2/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "FastEthernet3/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "VoIP-Null0": {
+            "ip": "",
+            "status": "up"
+        },
+        "Null0": {
+            "ip": "",
+            "status": "up"
         }
     },
     "R3": {
-        "addresses": {
-            "FastEthernet0/0": "198.51.101.11",
-            "FastEthernet1/0": "198.51.102.3"
+        "FastEthernet0/0": {
+            "ip": "198.51.101.11",
+            "status": "up"
         },
-        "status": {
-            "FastEthernet0/0": "up",
-            "FastEthernet1/0": "up",
-            "FastEthernet2/0": "down",
-            "FastEthernet3/0": "down",
-            "VoIP-Null0": "up",
-            "Null0": "up"
+        "FastEthernet1/0": {
+            "ip": "198.51.102.3",
+            "status": "up"
+        },
+        "FastEthernet2/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "FastEthernet3/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "VoIP-Null0": {
+            "ip": "",
+            "status": "up"
+        },
+        "Null0": {
+            "ip": "",
+            "status": "up"
         }
     },
     "R4": {
-        "addresses": {
-            "FastEthernet1/0": "198.51.100.4",
-            "FastEthernet0/0": "198.51.101.1"
+        "FastEthernet1/0": {
+            "ip": "198.51.100.4",
+            "status": "up"
         },
-        "status": {
-            "FastEthernet0/0": "up",
-            "FastEthernet1/0": "up",
-            "FastEthernet2/0": "down",
-            "FastEthernet3/0": "down",
-            "VoIP-Null0": "up",
-            "Null0": "up"
+        "FastEthernet0/0": {
+            "ip": "198.51.101.1",
+            "status": "up"
+        },
+        "FastEthernet2/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "FastEthernet3/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "VoIP-Null0": {
+            "ip": "",
+            "status": "up"
+        },
+        "Null0": {
+            "ip": "",
+            "status": "up"
         }
     },
     "R5": {
-        "addresses": {
-            "FastEthernet0/0": "198.51.101.5"
+        "FastEthernet0/0": {
+            "ip": "198.51.101.5",
+            "status": "up"
         },
-        "status": {
-            "FastEthernet0/0": "up",
-            "FastEthernet1/0": "down",
-            "FastEthernet2/0": "down",
-            "FastEthernet3/0": "down",
-            "VoIP-Null0": "up",
-            "Null0": "up"
+        "FastEthernet1/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "FastEthernet2/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "FastEthernet3/0": {
+            "ip": "",
+            "status": "down"
+        },
+        "VoIP-Null0": {
+            "ip": "",
+            "status": "up"
+        },
+        "Null0": {
+            "ip": "",
+            "status": "up"
         }
     }
 }

@@ -1,0 +1,93 @@
+#configure ipv6 slaac
+
+conf t
+ipv6 unicast-routing
+interface f0/0
+ipv6 address autoconfig
+ipv6 enable
+no shutdown
+exit
+exit
+write memory
+show ipv6 interface brief
+
+conf t
+interface f0/0
+ip address dhcp
+no shutdown
+exit
+exit
+write memory
+
+
+conf t
+ipv6 unicast-routing
+interface f1/0
+ipv6 enable
+ipv6 address 2001:1:2::/64 eui-64
+ipv6 nd other-config-flag
+no shutdown
+exit
+exit
+write memory
+
+sudo tcpdump -i tap -w /home/student/labs/labmidterm/ping_packet.pcap
+
+
+
+conf t
+interface f1/0
+ip address 198.51.102.1 255.255.255.0
+ipv6 address 2001:1:3::1/64
+no shutdown
+exit
+ip dhcp excluded-address 198.51.102.1
+ip dhcp pool ipv4pool
+network 198.51.102.0 255.255.255.0
+default-router 198.51.102.1
+dns-server 198.51.102.1
+exit
+ipv6 dhcp pool ipv6pool
+address prefix 2001:1:3::/64
+dns-server 2001:1:3::1
+exit
+interface f1/0
+ipv6 dhcp server ipv6pool
+exit
+exit
+write memory
+
+conf t
+interface f1/0
+ip address dhcp
+ipv6 enable
+ipv6 address dhcp
+no shutdown
+exit
+exit
+write memory
+
+
+conf t
+hostname R5
+ip domain-name LABMIDTERM.LOCAL
+crypto key generate rsa
+2048
+ip ssh version 2
+line vty 0 4
+transport input ssh
+login local
+exit
+username admin password admin
+enable secret admin
+exit
+write memory
+
+
+conf t
+snmp-server community public ro
+snmp-server community private rw
+snmp-server host 198.51.100.9 version 2c public
+snmp-server enable traps
+exit
+
