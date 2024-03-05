@@ -39,13 +39,13 @@ def run_snmp():
             interface_index = ip_int_map.get(item.oid_index)
             interface_name = interface_names.get(interface_index)
             if interface_name not in snmp_data[router]:
-                snmp_data[router][interface_name] = {'ip': '', 'status': ''}
-            snmp_data[router][interface_name]['ip'] = item.value
+                snmp_data[router][interface_name] = {'ipv4': '', 'ipv6':'', 'status': ''}
+            snmp_data[router][interface_name]['ipv4'] = item.value
         
         for item in fetch_snmp_data(ip, status_oid):
             interface_name = interface_names.get(item.oid_index)
             if interface_name not in snmp_data[router]:
-                snmp_data[router][interface_name] = {'ip': '', 'status': ''}
+                snmp_data[router][interface_name] = {'ipv4': '', 'ipv6':'', 'status': ''}
             snmp_data[router][interface_name]['status'] = 'up' if item.value == '1' else 'down'
 
     print("Saving data.txt")
